@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NODO | Próximamente</title>
+  <title>NODO | Entrenamiento</title>
   <meta name="description"
     content="NODO es un centro de entrenamiento especializado para guardavidas. Próximamente más información." />
   <link rel="stylesheet" href="css/style.css" />
@@ -12,118 +12,197 @@
 </head>
 
 <body>
-  <div class="blur-orb orb-1"></div>
-  <div class="blur-orb orb-2"></div>
-  <div class="blur-orb orb-3"></div>
-
-  <header class="header">
-    <div class="container">
+  <header>
+    <section class="container">
       <nav class="nav">
+
         <a href="#inicio" class="brand" aria-label="NODO inicio">
           <div class="brand-mark">
-            <img src="img/imglogo.png" alt="logo">
+            <img id="logo-img" src="img/imglogo.png" alt="logo">
+            <span>NODO</span>
           </div>
-          <span>NODO training</span>
         </a>
-
         <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
           <span></span>
           <span></span>
           <span></span>
         </button>
-
+        <!-- DESKTOP MENU -->
         <div class="nav-desktop">
           <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#donde-entrenamos">Dónde entrenamos</a></li>
+            <li><a href="#horario">Horario</a></li>
           </ul>
-
-          <a class="nav-cta" href="https://www.instagram.com/nodo.tandil?igsh=MThsZGJ4N2NkMHFjdQ==" target="_blank"
-            rel="noopener noreferrer">Instagram</a>
         </div>
       </nav>
-    </div>
-
-    <div class="mobile-menu" id="mobileMenu">
+    </section>
+    <!-- MOBILE MENU -->
+    <section class="mobile-menu" id="mobileMenu">
       <div class="container">
         <ul>
           <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#horario">Horario</a></li>
           <li><a href="#contacto">Contacto</a></li>
-
+          
         </ul>
-        <a class="nav-cta" href="https://www.instagram.com/nodo.tandil?igsh=MThsZGJ4N2NkMHFjdQ==" target="_blank"
-          rel="noopener noreferrer">Instagram</a>
       </div>
-    </div>
+    </section>
   </header>
 
   <main>
-    <section class="hero" id="inicio">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Entrenamiento para guardavidas</div>
+    <section class="cards-section">
+      <div class = "eyebrow">
+        <p>Entrenamiento para guardavidas</p>
+        
+      </div>
 
-          <h1>NODO <span>algo nuevo está por llegar</span></h1>
+      <article class="card" id="inicio">
+        <h3>¿Qué es NODO?</h3>
+        
+        <p> NODO es un espacio de entrenamiento para guardavidas.</p>
+        <p>Surge con el objetivo de brindar un espacio de preparación física y técnica durante todo el año,
+          permitiendo que los guardavidas mantengan y mejoren su rendimiento para el ámbito laboral.</p>
+      </article>
+      
 
-          <section class="sections" id="servicios">
-            <div class="container">
-              <div class="cards-grid">
-                <div class="coming-card" id="proximamente">
-                  <h3>Próximamente</h3>
-                  <p>
-                    Estamos trabajando para una mejor experiencia.
-                  </p>
-                  <div class="pill">Sitio en construcción</div>
-                </div>
-                <div class="coming-card" id="proximamente">
+       <article class="card">
+        <h3>No es natación común</h3>
+        <p> No tiene como objetivo enseñar a nadar ni perfeccionar estilos con fines recreativos (ej, no enseñamos a nadar over). 
+          <p>El enfoque está puesto en la preparación física profesional de los guardavidas.</p>
+          <p>Las clases presentan una mayor intensidad y están diseñadas para adultos con base previa en el agua.</p>
 
-                  <h3>¿Qué es NODO?</h3>
-                  <p> Es un espacio dedicado al entrenamiento específico de guardavidas, con enfoque en la preparación
-                    física para las demandas reales de la profesión.
-                  </p>
-                </div>
-              </div>
+        <p>En el caso de aspirantes a guardavidas, estudiantes de educación física o personas con experiencia previa en el medio deberán tener una buena base de natación.</p>
+      </article>
 
-              <div class="contact-card" id="contacto">
-                <div>
-                  <h3>Seguinos en instagram </h3>
+      <article class="card" id="donde-entrenamos">
+        <h3>Estamos en Escualo Tandil</h3>
+        <img class = "card-img" src="img/logo_escualo.jpg" alt="">
+        <p> Los entrenamientos se realizan en Escualo Tandil, ubicado en Belgrano 1652 </p>
+        
+      </article>
+         
+      <article class="card" id="horario">
+  <h3>Días y horarios</h3>
 
-                </div>
+  <div class="schedule-wrapper">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th>LUN</th>
+          <th>MAR</th>
+          <th>MIÉ</th>
+          <th>JUE</th>
+          <th>VIE</th>
+        </tr>
+      </thead>
 
-                <div class="contact-links">
-                  <a class="contact-link" href="https://www.instagram.com/nodo.tandil?igsh=MThsZGJ4N2NkMHFjdQ==" target="_blank" rel="noopener noreferrer">
-                    <strong>Instagram</strong>
-                    <span>@nodo.tandil</span>
-                  </a>
+      <tbody>
+        <tr>
+          <td></td>
+          <td class="gym">
+            <span>11 a 12</span>
+            <p class="p-table">GYM</p>
+          </td>
+          <td></td>
+          <td class="gym">
+            <span>11 a 12</span>
+            <p class="p-table">GYM</p>
+          </td>
+          <td></td>
+        </tr>
 
-                  <!--<a class="contact-link" href="https://wa.me/5490000000000" target="_blank" rel="noopener noreferrer">
-              <strong>WhatsApp</strong>
-              <span>Consultas y contacto directo</span>
-            </a>
+        <tr>
+          <td class="pool">
+            <span>12 a 13</span>
+            <p class="p-table">PILETA</p>
+          </td>
+          <td></td>
+          <td class="pool">
+            <span>12 a 13</span>
+            <p class="p-table">PILETA</p>
+          </td>
+          <td></td>
+          <td class="pool">
+            <span>12 a 13</span>
+            <p class="p-table" >PILETA</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+    </section>
 
-            <a class="contact-link" href="mailto:info@nodo.com">
-              <strong>Email</strong>
-              <span>info@nodo.com</span>
-            </a>
-          -->
-                </div>
-              </div>
-            </div>
-          </section>
 
-          <!-- <div class="hero-actions">
-            <a class="btn btn-primary" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Ver Instagram</a>
-            <a class="btn btn-secondary" href="#contacto">Contacto</a>
-          </div>
-          -->
+      
+      <section class="contact-card" id="contacto">
+      <div>
+        <h3>Información e inscripciones </h3>
+        <p>Para más información e inscripciones, por favor contactanos a través del WhatsApp de Escualo, o presencialmente en Belgrano 1652.</p>
+      </div>
+      <article class="contact-links">
+        <a class="contact-link" href="https://wa.me/5492494324794" target="_blank">
+          <img src="img/whatsapp-logo.png" alt="">
+          
+          <strong>Escualo Tandil</strong>
+        </a>
+      </article>
+     
+    </section>
+
+    <section class="contact-card" id="contacto">
+      <div>
+        <h3>Seguinos en nuestras redes </h3>
+      </div>
+
+      <article class="contact-links">
+        <a class="contact-link" href="https://www.instagram.com/nodo.tandil?igsh=MThsZGJ4N2NkMHFjdQ==" target="_blank"
+          rel="noopener noreferrer">
+          <img src="img/instagram-logo.png" alt=""><strong>@nodo.tandil</strong>
+        
+        </a>
+      </article>
+
+      <article class="contact-links">
+        <a class="contact-link" href="https://www.instagram.com/escualotandil?igsh=MzE5YjA4ODg0ZDEyYQ==" target="_blank"
+          rel="noopener noreferrer">
+          <img src="img/instagram-logo.png" alt=""><strong>@escualotandil</strong>
+          
+        </a>
+      </article>
+    </section>
+
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <p>© 2026 NODO. Todos los derechos reservados.</p>
-      <p>By @julidannunzio :)</p>
+  <footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- MARCA -->
+    <div class="footer-brand">
+      <h3>NODO</h3>
+      <p>Entrenamiento físico para guardavidas en Tandil.</p>
     </div>
-  </footer>
+
+
+    <!-- CONTACTO -->
+    <div class="footer-links">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/nodo.tandil" target="_blank">Nodo Tandil</a></li>
+        <li><a href="https://www.instagram.com/escualotandil" target="_blank">Escualo Tandil</a></li>
+        <li><a href="https://wa.me/5492494324794" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 NODO — Todos los derechos reservados</p>
+    <p>By @julidannunzio</p>
+  </div>
+</footer>
 
   <script src="js/script.js"></script>
 </body>
