@@ -248,10 +248,15 @@ main {
   max-height: 360px;
 }
 
+
 /* =========================
    HORARIOS
 ========================= */
-
+#horario-img {
+  border-radius: 30px;
+  margin-top: 24px;
+  object-fit: cover;
+}
 .schedule-wrapper {
   margin-top: 24px;
   overflow-x: auto;
