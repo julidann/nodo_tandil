@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NODO | Rutinas Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/rutina_style.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="css/accordeon.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+   
+      <a href="index.html" class="logo">NODO</a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="#precios-online">Planes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero rutinas-hero hero-rutina">
+      <div class="hero-content">
+        <span class="tag">Entrenamiento a distancia</span>
+        <h2>Rutinas online en pileta</h2>
+        <p>
+          Planes de entrenamiento para guardavidas y nadadores que quieren mejorar su rendimiento
+          con una estructura clara, progresiva y fácil de seguir.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#planes-online" class="btn primary">Ver modalidad</a>
+          <a href="#descarga" class="btn secondary">Cómo funciona</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="descarga">
+      <div class="section-title">
+        <span>Cómo funciona</span>
+        <h2>Entrená desde donde estés</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>1. Recibís tu rutina</h3>
+          <p>
+            Accedés a un PDF mensual con entrenamientos organizados por semana,
+            objetivos y estructura de cada sesión.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2. Seguís el plan</h3>
+          <p>
+            Cada rutina incluye entrada en calor, técnica, velocidad, trabajo principal,
+            apnea, patada, rescate y vuelta a la calma.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3. Progresás</h3>
+          <p>
+            Los entrenamientos están pensados para mejorar resistencia, fuerza,
+            velocidad y eficiencia en el agua.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h2>Rutinas simples, visuales y ordenadas</h2>
+      <p>
+        Ideal para quienes quieren entrenar con planificación, pero no pueden asistir presencialmente.
+      </p>
+    </section>
+
+    <section class="section split" id="planes-online">
+  
+  <div>
+    <span class="mini-title">Modalidad online</span>
+    <h2>¿Qué incluye?</h2>
+
+    <p>
+      Vas a recibir un plan mensual de entrenamiento para pileta,
+      diseñado para mejorar tu rendimiento como guardavidas o nadador.
+    </p>
+
+    <p>
+      Las rutinas se entregan de forma digital y están organizadas por semanas,
+      con una estructura clara y progresiva.
+    </p>
+  </div>
+
+  <div class="info-box">
+
+    <p><strong>Acceso:</strong> Mediante cuenta de Gmail</p>
+    <p><strong>Entrega:</strong> Recibís un mail con acceso a una carpeta de Google Drive</p>
+    <p><strong>Contenido:</strong> Rutinas en formato PDF, organizadas por semana</p>
+    <p><strong>Uso:</strong> Podés verlas online o descargarlas</p>
+    <p><strong>Ubicación:</strong> Disponibles en Drive → “Compartido conmigo”</p>
+    <p><strong>Frecuencia:</strong> 2 o 3 entrenamientos por semana</p>
+    <p><strong>Nivel:</strong> Avanzado</p>
+
+  </div>
+
+</section>
+        
+  <section class="section" id="precios-online">
+      <div class="section-title">
+        <span>Planes online en pileta</span>
+        <!-- <h2>Elegí cómo entrenar</h2> -->
+      </div>
+      <article class="price-card featured">
+          <h3 >PRÓXIMAMENTE</h3>
+        </article>
+      <!--<div class="price-grid">
+        <article class="price-card featured">
+          <h3>RECOMENDADO</h3>
+          <h3>12 sesiones mensuales</h3>
+          <p class="price">$66.000</p>
+          <p class="price-detail highlight">A sólo $5.500 por clase</p>
+          <ul>
+            <li> PDF descargable</li>
+            <li>3 entrenamientos por semana</li>
+            <li>Transferencia bancaria</li>
+          </ul>
+          
+          <a href="#" class="btn primary"
+   onclick="abrirPago(event, '12 sesiones mensuales', '$66.000', 'https://mpago.la/14o259c')">
+  Comenzar ahora
+</a>
+    
+        </article>
+ 
+        <article class="price-card">
+          <h3>8 sesiones mensuales</h3>
+          <p class="price">$57.000</p>
+          <p class="price-detail highlight">A sólo $7.125 por clase</p>
+          <ul>
+            <li>PDF descargable</li>
+            <li>2 entrenamientos por semana</li>
+            <li>Transferencia bancaria</li>
+          </ul>
+          <a href="#" class="btn primary"
+   onclick="abrirPago(event, '8 sesiones mensuales', '$57.000', 'https://mpago.la/1Lp3Ldk')">
+  Comenzar ahora
+</a>
+        </article>
+      </div>-->
+    </section>
+
+  </main>
+
+  <!-- Modal de pago -->
+
+  <div id="modalPago" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="cerrarPago()">✕</span>
+
+    <h2>Elegí cómo pagar</h2>
+<p id="modalPlan" class="modal-plan"></p>
+
+<a id="mpLink" href="#" target="_blank" class="pay-btn mp">
+  💳 Pagar con Mercado Pago
+  <span id="modalPrecio"></span>
+</a>
+
+    <!-- Transferencia -->
+    <div class="pay-btn transfer">
+
+      <h4>Transferencia bancaria</h4>
+
+      <p><strong>Alias:</strong> julidann</p>
+      <p><strong>Titular:</strong> Julieta D'Annunzio</p>
+
+      <button onclick="copiarAlias()">Copiar alias</button>
+
+      <a id="whatsappComprobante" href="https://wa.me/5492494338191?text=Hola%20ya%20realicé%20la%20transferencia" 
+         target="_blank" 
+         class="btn secondary">
+        Enviar comprobante
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+  
+  <script src="js/script.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/acordeon.js"></script>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h2>NODO</h2>
+      <p>Entrenamiento para guardavidas · Tandil</p>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Contacto planes presenciales</h3>
+      <p>
+        <strong>Escualo Tandil</strong><br>
+        <a href="https://instagram.com/escualotandil" target="_blank">@escualotandil</a><br>
+        <a href="https://wa.me/5492494324794" target="_blank">WhatsApp Escualo</a>
+      </p>
+    </div>
+    <div class="footer-contact">
+      <h3>Contacto planes online</h3>
+      <p>
+        <strong>Nodo Tandil</strong><br>
+        <a href="mailto:nodo.tandil@gmail.com">nodo.tandil@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="footer-social">
+      <h3>Seguinos</h3>
+      <strong>Instagram</strong><br>
+      <p>
+        <a href="https://instagram.com/nodo.tandil" target="_blank">@nodo.tandil</a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 NODO - Todos los derechos reservados - by julidannunzio :)</p>
+  </div>
+</footer>
+
+</body>
+</html>
