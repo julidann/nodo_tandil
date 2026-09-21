@@ -61,3 +61,21 @@
     min-height: 0;
   }
 }
+
+
+/* Modalidad online alineada con la identidad roja de NODO */
+.summary-grid article {
+  border-color: rgba(255, 255, 255, 0.08);
+  background:
+    linear-gradient(180deg, rgba(152, 25, 20, 0.04), transparent 46%),
+    var(--surface);
+}
+
+.summary-grid article > span {
+  color: var(--primary);
+}
+
+.online-note {
+  border-left: 3px solid var(--primary);
+  padding-left: 12px;
+}
