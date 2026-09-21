@@ -149,3 +149,89 @@
     border-radius: 8px;
   }
 }
+
+
+/* =========================================================
+   MODALIDAD ONLINE = AMARILLO
+   ========================================================= */
+
+.online-hero .tag {
+  color: var(--signal);
+}
+
+.online-hero .primary,
+.online-hero .secondary {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: #17191c;
+}
+
+.online-hero .primary:hover,
+.online-hero .secondary:hover {
+  background: #ffff78;
+  border-color: #ffff78;
+  color: #17191c;
+}
+
+.online-summary .section-title span,
+.plans-section .section-title span,
+.online-summary .plan-label,
+.plans-section .plan-label {
+  color: #6f6f12;
+}
+
+.online-summary .section-title::after,
+.plans-section .section-title::after {
+  background: var(--signal);
+}
+
+.summary-grid article {
+  border-top-color: var(--signal);
+}
+
+.summary-grid article:nth-child(2),
+.summary-grid article:nth-child(3) {
+  border-top-color: var(--signal);
+}
+
+.summary-grid article > span,
+.summary-grid article:nth-child(2) > span {
+  color: #777711;
+}
+
+.online-note {
+  border-left-color: var(--signal);
+  background: rgba(244, 244, 88, 0.13);
+}
+
+.online-price-grid .price-card,
+.online-price-grid .price-card:first-child,
+.online-price-grid .price-card.featured {
+  border-top-color: var(--signal);
+}
+
+.online-price-grid .price-card.featured {
+  border-color: rgba(180, 180, 34, 0.34);
+  border-top-color: var(--signal);
+  background:
+    linear-gradient(180deg, rgba(244, 244, 88, 0.12), transparent 42%),
+    var(--white);
+}
+
+.online-price-grid .highlight {
+  background: rgba(244, 244, 88, 0.34);
+  color: #4a4a0d;
+}
+
+.online-price-grid .badge {
+  background: var(--signal);
+  color: #17191c;
+}
+
+.online-price-grid .card-cta {
+  color: #777711;
+}
+
+.online-price-grid .card-cta:hover {
+  color: var(--primary);
+}
