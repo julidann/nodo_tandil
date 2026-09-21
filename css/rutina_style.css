@@ -79,3 +79,73 @@
   border-left: 3px solid var(--primary);
   padding-left: 12px;
 }
+
+
+/* EXPERIENCIA GUARDAVIDAS — MODALIDAD ONLINE */
+
+.online-summary {
+  background:
+    linear-gradient(180deg, rgba(43, 65, 98, 0.035), transparent 40%),
+    var(--white);
+}
+
+.summary-grid {
+  gap: 18px;
+}
+
+.summary-grid article {
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+  border: 1px solid rgba(43, 65, 98, 0.16);
+  border-top: 5px solid var(--secondary);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.summary-grid article:nth-child(2) {
+  border-top-color: var(--primary);
+}
+
+.summary-grid article:nth-child(3) {
+  border-top-color: var(--secondary);
+}
+
+.summary-grid article > span {
+  color: var(--primary);
+}
+
+.summary-grid article:nth-child(2) > span {
+  color: var(--secondary);
+}
+
+.summary-grid h3 {
+  color: #181b1f;
+}
+
+.summary-grid p,
+.online-note {
+  color: var(--muted);
+}
+
+.online-note {
+  max-width: 520px;
+  padding: 10px 14px;
+  border-left: 4px solid var(--signal);
+  background: rgba(43, 65, 98, 0.05);
+}
+
+.online-price-grid .price-card:first-child {
+  border-top-color: var(--secondary);
+}
+
+.online-price-grid .price-card.featured {
+  border-top-color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .summary-grid article {
+    border-radius: 8px;
+  }
+}
