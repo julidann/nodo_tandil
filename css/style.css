@@ -1834,3 +1834,120 @@ body::before {
     width: 100px;
   }
 }
+
+
+/* =========================================================
+   COMPONENTE ÚNICO DE CARDS DE PRECIOS
+   Misma estructura y proporciones; sólo cambia la modalidad.
+   ========================================================= */
+
+.presencial-price-grid,
+.online-price-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+  justify-content: center;
+  max-width: none;
+  gap: 18px;
+}
+
+.presencial-price-grid {
+  --plan-accent: var(--secondary);
+  --plan-ink: var(--secondary);
+  --plan-rgb: 43, 65, 98;
+  --plan-on-accent: #ffffff;
+}
+
+.online-price-grid {
+  --plan-accent: var(--signal);
+  --plan-ink: #777711;
+  --plan-rgb: 244, 244, 88;
+  --plan-on-accent: #17191c;
+}
+
+.presencial-price-grid .price-card,
+.online-price-grid .price-card {
+  width: 100%;
+  min-height: 290px;
+  padding: 28px;
+  border: 1px solid rgba(var(--plan-rgb), 0.28);
+  border-top: 5px solid var(--plan-accent);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.presencial-price-grid .price-card:hover,
+.online-price-grid .price-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(var(--plan-rgb), 0.48);
+  border-top-color: var(--plan-accent);
+}
+
+.presencial-price-grid .price-card.featured,
+.online-price-grid .price-card.featured {
+  border: 1px solid rgba(var(--plan-rgb), 0.42);
+  border-top: 5px solid var(--plan-accent);
+  background:
+    linear-gradient(180deg, rgba(var(--plan-rgb), 0.10), transparent 42%),
+    var(--white);
+}
+
+.presencial-price-grid .plan-label,
+.online-price-grid .plan-label {
+  color: var(--plan-ink);
+}
+
+.presencial-price-grid .price-card h3,
+.online-price-grid .price-card h3 {
+  margin-top: 14px;
+  color: #181b1f;
+  font-size: 24px;
+}
+
+.presencial-price-grid .price,
+.online-price-grid .price {
+  margin-top: 28px;
+  color: var(--plan-ink);
+}
+
+.presencial-price-grid .highlight,
+.online-price-grid .highlight {
+  align-self: flex-start;
+  margin-top: 13px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background: rgba(var(--plan-rgb), 0.18);
+  color: var(--plan-ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.presencial-price-grid .badge,
+.online-price-grid .badge {
+  background: var(--plan-accent);
+  color: var(--plan-on-accent);
+  border-radius: 4px;
+}
+
+.presencial-price-grid .card-cta,
+.online-price-grid .card-cta {
+  margin-top: auto;
+  padding-top: 28px;
+  color: var(--plan-ink);
+}
+
+.presencial-price-grid .card-cta:hover,
+.online-price-grid .card-cta:hover {
+  color: var(--primary);
+}
+
+@media (max-width: 960px) {
+  .presencial-price-grid,
+  .online-price-grid {
+    grid-template-columns: minmax(280px, 520px);
+  }
+
+  .presencial-price-grid .price-card,
+  .online-price-grid .price-card {
+    min-height: 270px;
+  }
+}
