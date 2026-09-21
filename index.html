@@ -1,252 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NODO Tandil. Entrenamiento y preparación para guardavidas y aspirantes, presencial y online." />
   <title>NODO | Entrenamiento para Guardavidas</title>
   <link rel="icon" type="image/png" href="img/imglogo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-
   <header class="header">
-   <nav class="nav">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="logo-container" href="#inicio" aria-label="NODO Tandil - Inicio">
+        <img class="logo-img" src="img/logo_nodo.png" alt="" />
+        <span class="logo">NODO</span>
+      </a>
 
-  <div class="logo-container">
-    <img class="logo-img" src="img/logo_nodo.png" alt="Logo NODO">
-    <h1 class="logo">NODO</h1>
-  </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
 
-  <button class="menu-btn" id="menuBtn">☰</button>
-
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#precios">Planes presenciales</a></li>
-    <li><a href="rutinas.html">Rutinas online</a></li>
-  </ul>
-
-</nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#programa">Entrenamiento</a></li>
+        <li><a href="#presencial">Presencial</a></li>
+        <li><a href="rutinas.html">Online</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-
     <section class="hero" id="inicio">
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="tag">Entrenamiento integral</span>
-        <h2>Preparación física para guardavidas</h2>
+        <span class="tag">NODO · TANDIL</span>
+        <h1>ENTRENÁ PARA ESTAR LISTO <em>CUANDO IMPORTA.</em></h1>
         <p>
-          Un espacio pensado para mejorar tu rendimiento durante todo el año:
-          técnica, resistencia, fuerza, velocidad y rescate.
+          Preparación para guardavidas y aspirantes. Técnica, resistencia, velocidad,
+          fuerza y trabajo específico para el agua.
         </p>
+
         <div class="hero-buttons">
-          <a href="#precios" class="btn primary">Escualo Tandil</a>
-          <a href="rutinas.html" class="btn primary">Rutinas online</a>
-          <a href="#programa" class="btn secondary">Conocer NODO</a>
+          <a href="#presencial" class="btn primary">Entrenamiento presencial</a>
+          <a href="rutinas.html" class="btn secondary">Rutinas online</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Características de NODO">
+          <div><strong>01</strong><span>Preparación específica</span></div>
+          <div><strong>02</strong><span>Pileta + gimnasio</span></div>
+          <div><strong>03</strong><span>Presencial + online</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="programa">
-      <div class="section-title">
-        <span>NODO</span>
-        <h2>Un entrenamiento integral</h2>
+    <section class="section intro-section" id="programa">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">ENTRENAMIENTO INTEGRAL</span>
+          <h2>NO ES SOLO NADAR.<br>ES PREPARARTE PARA RESPONDER.</h2>
+        </div>
+        <p class="section-lead">
+          Entrenamos las capacidades que necesitás para sostener el rendimiento en el agua
+          y llegar preparado a evaluaciones, reválidas y situaciones específicas de rescate.
+        </p>
       </div>
 
       <div class="cards">
         <article class="card">
+          <span class="card-number">01</span>
           <h3>Pileta</h3>
-          <p>Trabajo técnico, resistencia, velocidad, apnea y tareas orientadas al rescate.</p>
+          <p>Técnica, resistencia, velocidad, apnea, remolques y trabajos orientados al rescate.</p>
         </article>
 
         <article class="card">
+          <span class="card-number">02</span>
           <h3>Gimnasio</h3>
-          <p>Fuerza, estabilidad, potencia, prevención de lesiones y preparación física general.</p>
+          <p>Fuerza, potencia, estabilidad y preparación física para complementar el trabajo acuático.</p>
         </article>
 
         <article class="card">
-          <h3>Seguimiento</h3>
-          <p>Planificación mensual, progresión de cargas y objetivos según la etapa del año.</p>
+          <span class="card-number">03</span>
+          <h3>Planificación</h3>
+          <p>Sesiones organizadas con objetivos concretos, progresión y seguimiento durante el año.</p>
         </article>
       </div>
     </section>
-    <section class="section split" id="online">
-      <div>
-        <!-- <span class="mini-title">Horarios</span> -->
-        <h2>Modalidad online</h2>
-        <p>
-          Entrenamiento en línea para guardavidas y personas que buscan mejorar su rendimiento acuático.
-        </p>
-        <a href="rutinas.html" class="btn primary">Empeza ahora</a>
+
+    <section class="focus-section">
+      <div class="focus-inner">
+        <div class="focus-title">
+          <span class="eyebrow">TE PREPARAMOS PARA</span>
+          <h2>OBJETIVOS REALES.<br>ENTRENAMIENTO ESPECÍFICO.</h2>
+        </div>
+
+        <div class="focus-grid">
+          <article>
+            <span>INGRESO</span>
+            <h3>Curso de guardavidas</h3>
+            <p>Construí la base física y acuática necesaria para llegar mejor preparado.</p>
+          </article>
+          <article>
+            <span>REVÁLIDA</span>
+            <h3>Pruebas y tiempos</h3>
+            <p>Trabajá ritmo, eficiencia y tolerancia al esfuerzo con objetivos medibles.</p>
+          </article>
+          <article>
+            <span>RENDIMIENTO</span>
+            <h3>Todo el año</h3>
+            <p>Mantené tu condición física y seguí mejorando aunque no tengas una prueba inmediata.</p>
+          </article>
+          <article>
+            <span>RESCATE</span>
+            <h3>Trabajo específico</h3>
+            <p>Incluí remolques, apnea y tareas orientadas a las exigencias reales del guardavidas.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="banner">
-      <h2>Entrená con estructura. Llegá mejor preparado.</h2>
-      <p>Entrenamientos presenciales y online para guardavidas que buscan mejorar su rendimiento físico.</p>
+    <section class="section" id="presencial">
+      <div class="section-heading compact">
+        <div>
+          <span class="eyebrow">MODALIDAD PRESENCIAL</span>
+          <h2>ENTRENÁ EN TANDIL.</h2>
+        </div>
+        <p class="section-lead">Pileta y preparación física con una estructura pensada para guardavidas y aspirantes.</p>
+      </div>
+
+      <div class="location-panel">
+        <div class="location-main">
+          <img src="img/logo_escualo.jpg" alt="Logo Escualo Tandil" class="logo-escualo" />
+          <div>
+            <span class="mini-title">ESCUALO TANDIL</span>
+            <h3>Belgrano 1652</h3>
+            <p>Lunes, miércoles y viernes · 12:00 a 13:00 hs</p>
+          </div>
+        </div>
+        <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="btn primary">Consultar por WhatsApp</a>
+      </div>
     </section>
-    <section class="section split" id="horarios">
+
+    <section class="section plans-section" id="precios-pileta">
       <div class="section-title">
-        <span>Escualo Tandil</span>
-        <!-- <h2>Elegí cómo entrenar</h2> -->
+        <span>PLANES PRESENCIALES</span>
+        <h2>PILETA</h2>
       </div>
-      <div>
-        <!-- <span class="mini-title">Horarios</span> -->
-        <h2>Modalidad presencial</h2>
-       
-        <img src="img/logo_escualo.jpg" alt="Escualo Tandil" class="logo-escualo" />
-        <p>Belgrano 1652.</p>
-      </div>
-    </section>
-    <section class="section" id="precios">
-      <div class="section-title">
-        <span>Planes presenciales en pileta</span>
-        <!-- <h2>Elegí cómo entrenar</h2> -->
-      </div>
+
       <div class="price-grid">
-
-        <article class="price-card clickable">
-          <a href="https://wa.me/5492494324794" target="_blank" class="card-link"></a>
-           
-          <h3>Abonar por entrenamiento </h3>
+        <article class="price-card">
+          <span class="plan-label">CLASE</span>
+          <h3>Por entrenamiento</h3>
           <p class="price">$20.000</p>
-          <ul>
-            <li>Entrenamiento en Escualo Tandil</li>
-          </ul>
-          <!--<a href="https://wa.me/5492494123456" target="_blank" class="btn primary">
-            Inscribirse
-          </a>-->
-          
-
+          <p class="price-caption">Abonás solamente la sesión que realizás.</p>
+          <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="card-cta">Consultar →</a>
         </article>
 
         <article class="price-card featured">
-          <!-- <span class="badge">Recomendado 15% OFF</span> -->
-            <a href="https://wa.me/5492494324794" target="_blank" class="card-link"></a>
-           <h3>RECOMENDADO</h3>
-          <h3>12 entrenamientos mensuales</h3>
+          <span class="badge">MÁS ELEGIDO</span>
+          <span class="plan-label">MENSUAL</span>
+          <h3>12 entrenamientos</h3>
           <p class="price">$125.000</p>
-          <p class="price-detail highlight">Menos de $10.500 por sesión</p>
+          <p class="highlight">Menos de $10.500 por sesión</p>
           <ul>
-            <li>Días: Lunes, miércoles y viernes</li>
-            <li>Horario: 12:00 a 13:00</li>
+            <li>Lunes, miércoles y viernes</li>
+            <li>12:00 a 13:00 hs</li>
             <li>Entrenamiento en Escualo Tandil</li>
           </ul>
-          
-          
+          <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="card-cta">Consultar →</a>
         </article>
 
         <article class="price-card">
-           <a href="https://wa.me/5492494324794" target="_blank" class="card-link"></a>
-          <h3>8 entrenamientos mensuales</h3>
+          <span class="plan-label">MENSUAL</span>
+          <h3>8 entrenamientos</h3>
           <p class="price">$115.000</p>
           <ul>
-            <li>8 entrenamientos en pileta</li>
+            <li>8 sesiones mensuales</li>
             <li>Entrenamiento en Escualo Tandil</li>
           </ul>
-          
+          <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="card-cta">Consultar →</a>
         </article>
       </div>
     </section>
 
-    <section class="section" id="precios">
+    <section class="section plans-section" id="precios-gimnasio">
       <div class="section-title">
-        <span>Planes presenciales gimnasio</span>
-        <!-- <h2>Elegí cómo entrenar</h2> -->
+        <span>PLANES PRESENCIALES</span>
+        <h2>GIMNASIO</h2>
       </div>
+
       <div class="price-grid">
-
-        <article class="price-card clickable">
-          <a href="https://wa.me/5492494324794" target="_blank" class="card-link"></a>
-          <h3>Abonar por entrenamiento </h3>
+        <article class="price-card">
+          <span class="plan-label">CLASE</span>
+          <h3>Por entrenamiento</h3>
           <p class="price">$10.000</p>
-          <ul>
-            <li>8 entrenamientos en gimnasio</li>
-            <li>Entrenamiento en Escualo Tandil</li>
-          </ul>
-          
-
+          <p class="price-caption">Trabajo de fuerza y preparación física.</p>
+          <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="card-cta">Consultar →</a>
         </article>
-        
 
-        <article class="price-card featured">
-          <!-- <span class="badge">Recomendado 15% OFF</span> -->
-           <a href="https://wa.me/5492494324794" target="_blank" class="card-link"></a>
-          <h3>RECOMENDADO 15% OFF</h3>
-          <p class="price">Pileta + Gimnasio</p>
+        <article class="price-card featured combo-card">
+          <span class="badge">15% OFF</span>
+          <span class="plan-label">COMBINADO</span>
+          <h3>Pileta + gimnasio</h3>
+          <p class="combo-copy">Combiná el trabajo acuático con fuerza y preparación física.</p>
           <ul>
-            <li>3 días de pileta + 2 días de gimnasio</li>
-            <li>2 días de pileta + 1 día de gimnasio</li>
-            <li>Trabajo completo de rendimiento</li>
+            <li>3 días de pileta + 2 de gimnasio</li>
+            <li>o 2 días de pileta + 1 de gimnasio</li>
+            <li>Trabajo integral de rendimiento</li>
           </ul>
-         
+          <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="card-cta">Consultar →</a>
         </article>
 
         <article class="price-card">
-           <a href="https://wa.me/5492494324794" target="_blank" class="card-link"></a>
-          <h3>8 entrenamientos mensuales</h3>
+          <span class="plan-label">MENSUAL</span>
+          <h3>8 entrenamientos</h3>
           <p class="price">$50.000</p>
           <ul>
-            <li>8 entrenamientos en pileta</li>
-            <li>Entrenamiento en Escualo Tandil</li>
+            <li>8 entrenamientos en gimnasio</li>
+            <li>Planificación específica</li>
           </ul>
+          <a href="https://wa.me/5492494324794" target="_blank" rel="noopener" class="card-cta">Consultar →</a>
         </article>
       </div>
     </section>
 
-    <section class="section split" id="online">
-      <div>
-        <!-- <span class="mini-title">Horarios</span> -->
-        <h2>Modalidad online</h2>
-        <p>
-          Entrenamiento en línea para guardavidas y personas que buscan mejorar su rendimiento acuático.
-        </p>
-        <a href="rutinas.html" class="btn primary">Empeza ahora</a>
+    <section class="online-cta" id="online">
+      <div class="online-cta-inner">
+        <div>
+          <span class="eyebrow">¿NO ESTÁS EN TANDIL?</span>
+          <h2>ENTRENÁ CON NODO<br>DESDE DONDE ESTÉS.</h2>
+          <p>Rutinas de pileta organizadas por semanas, objetivos y estructura de sesión.</p>
+        </div>
+        <a href="rutinas.html" class="btn dark-btn">Conocer modalidad online</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-  <div class="footer-container">
+  <footer class="footer" id="contacto">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">NODO</div>
+        <p>Entrenamiento para guardavidas · Tandil</p>
+      </div>
 
-    <div class="footer-brand">
-      <h2>NODO</h2>
-      <p>Entrenamiento para guardavidas · Tandil</p>
-    </div>
+      <div class="footer-contact">
+        <h3>Presencial</h3>
+        <p>Escualo Tandil · Belgrano 1652</p>
+        <a href="https://wa.me/5492494324794" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
 
-    <div class="footer-contact">
-      <h3>Contacto planes presenciales</h3>
-      <p>
-        <strong>Escualo Tandil</strong><br>
-        <a href="https://instagram.com/escualotandil" target="_blank">@escualotandil</a><br>
-        <a href="https://wa.me/5492494324794" target="_blank">WhatsApp Escualo</a>
-      </p>
-    </div>
-    <div class="footer-contact">
-      <h3>Contacto planes online</h3>
-      <p>
-        <strong>Nodo Tandil</strong><br>
+      <div class="footer-contact">
+        <h3>Online</h3>
         <a href="mailto:nodo.tandil@gmail.com">nodo.tandil@gmail.com</a>
-      </p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Instagram</h3>
+        <a href="https://instagram.com/nodo.tandil" target="_blank" rel="noopener">@nodo.tandil</a>
+      </div>
     </div>
 
-    <div class="footer-social">
-      <h3>Seguinos</h3>
-      <strong>Instagram</strong><br>
-      <p>
-        <a href="https://instagram.com/nodo.tandil" target="_blank">@nodo.tandil</a>
-      </p>
+    <div class="footer-bottom">
+      <p>© 2026 NODO · Tandil</p>
+      <p>Entrenamiento · Preparación · Rendimiento</p>
     </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 NODO - Todos los derechos reservados - by julidannunzio :)</p>
-  </div>
-</footer>
+  </footer>
 
   <script src="js/script.js"></script>
 </body>
-
 </html>
