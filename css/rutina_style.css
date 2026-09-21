@@ -235,3 +235,75 @@
 .online-price-grid .card-cta:hover {
   color: var(--primary);
 }
+
+
+/* Mantener exactamente el mismo componente de precios que en presencial */
+.online-price-grid {
+  --plan-accent: var(--signal);
+  --plan-ink: #777711;
+  --plan-rgb: 244, 244, 88;
+  --plan-on-accent: #17191c;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
+  justify-content: center;
+  max-width: none;
+  gap: 18px;
+}
+
+.online-price-grid .price-card,
+.online-price-grid .price-card:first-child,
+.online-price-grid .price-card.featured {
+  width: 100%;
+  min-height: 290px;
+  padding: 28px;
+  border: 1px solid rgba(var(--plan-rgb), 0.28);
+  border-top: 5px solid var(--plan-accent);
+  border-radius: 10px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.online-price-grid .price-card.featured {
+  border-color: rgba(var(--plan-rgb), 0.42);
+  border-top-color: var(--plan-accent);
+  background:
+    linear-gradient(180deg, rgba(var(--plan-rgb), 0.10), transparent 42%),
+    var(--white);
+}
+
+.online-price-grid .plan-label,
+.online-price-grid .price,
+.online-price-grid .card-cta {
+  color: var(--plan-ink);
+}
+
+.online-price-grid .highlight {
+  margin-top: 13px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background: rgba(var(--plan-rgb), 0.18);
+  color: var(--plan-ink);
+}
+
+.online-price-grid .badge {
+  background: var(--plan-accent);
+  color: var(--plan-on-accent);
+  border-radius: 4px;
+}
+
+.online-price-grid .card-cta {
+  margin-top: auto;
+  padding-top: 28px;
+}
+
+@media (max-width: 960px) {
+  .online-price-grid {
+    grid-template-columns: minmax(280px, 520px);
+  }
+
+  .online-price-grid .price-card,
+  .online-price-grid .price-card:first-child,
+  .online-price-grid .price-card.featured {
+    min-height: 270px;
+  }
+}
