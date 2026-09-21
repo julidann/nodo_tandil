@@ -1654,3 +1654,183 @@ body::before {
     display: none;
   }
 }
+
+
+/* =========================================================
+   CÓDIGO DE COLOR DE MODALIDADES
+   NODO = rojo · Presencial = azul · Online = amarillo
+   ========================================================= */
+
+/* HERO: cada modalidad se reconoce desde el primer clic */
+
+.hero .presencial-action {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--white);
+}
+
+.hero .presencial-action:hover {
+  background: #36547d;
+  border-color: #36547d;
+}
+
+.hero .online-action {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: #161616;
+}
+
+.hero .online-action:hover {
+  background: #ffff78;
+  border-color: #ffff78;
+}
+
+/* PRESENCIAL = AZUL */
+
+.presencial-section .section-title span,
+.presencial-section .mini-title,
+.presencial-section .plan-label {
+  color: var(--secondary);
+}
+
+.presencial-section .section-title::after {
+  background: var(--secondary);
+}
+
+.presencial-section .location-panel {
+  border-color: rgba(43, 65, 98, 0.24);
+  border-left-color: var(--secondary);
+}
+
+.presencial-section .location-panel .primary {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--white);
+}
+
+.presencial-section .location-panel .primary:hover {
+  background: #36547d;
+  border-color: #36547d;
+}
+
+.presencial-price-grid .price-card {
+  border-top-color: var(--secondary);
+}
+
+.presencial-price-grid .price-card:hover {
+  border-color: rgba(43, 65, 98, 0.34);
+  border-top-color: var(--secondary);
+}
+
+.presencial-price-grid .price-card.featured {
+  border-color: rgba(43, 65, 98, 0.34);
+  border-top-color: var(--secondary);
+  background:
+    linear-gradient(180deg, rgba(43, 65, 98, 0.06), transparent 42%),
+    var(--white);
+}
+
+.presencial-price-grid .price {
+  color: var(--secondary);
+}
+
+.presencial-price-grid .highlight {
+  background: rgba(43, 65, 98, 0.10);
+  color: var(--secondary);
+}
+
+.presencial-price-grid .badge {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.presencial-price-grid .card-cta {
+  color: var(--secondary);
+}
+
+.presencial-price-grid .card-cta:hover {
+  color: var(--primary);
+}
+
+/* ONLINE = AMARILLO */
+
+.online-cta {
+  color: var(--text);
+  background:
+    linear-gradient(120deg, rgba(244, 244, 88, 0.16), transparent 52%),
+    #fbfbf7;
+  border-top: 6px solid var(--signal);
+  border-bottom: 1px solid rgba(23, 25, 28, 0.08);
+}
+
+.online-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 8%;
+  width: 120px;
+  height: 100%;
+  opacity: 0.24;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      var(--signal) 0,
+      var(--signal) 9px,
+      transparent 9px,
+      transparent 26px
+    );
+  transform: skewX(-10deg);
+}
+
+.online-cta::after {
+  display: none;
+}
+
+.online-cta .eyebrow {
+  color: #67670e;
+}
+
+.online-cta h2 {
+  color: #181b1f;
+}
+
+.online-cta p {
+  color: var(--muted);
+}
+
+.online-cta .dark-btn {
+  background: var(--signal);
+  border-color: var(--signal);
+  color: #17191c;
+}
+
+.online-cta .dark-btn:hover {
+  background: #ffff78;
+  border-color: #ffff78;
+  color: #17191c;
+}
+
+/* Navegación: NODO sigue siendo rojo, pero las modalidades conservan su código */
+
+.nav-links li:first-child a:hover {
+  color: var(--secondary);
+}
+
+.nav-links li:first-child a::after {
+  background: var(--secondary);
+}
+
+.nav-links li:nth-child(2) a:hover {
+  color: #8a8a13;
+}
+
+.nav-links li:nth-child(2) a::after {
+  background: var(--signal);
+}
+
+@media (max-width: 760px) {
+  .online-cta::before {
+    right: -40px;
+    width: 100px;
+  }
+}
